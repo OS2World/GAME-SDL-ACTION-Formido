@@ -1,0 +1,46 @@
+Formido 1.0.1
+
+Noe Falzon <noe.falzon@tiscali.fr>
+
+This is the source distribution for GNU/Linux and Mac OS X.
+It should compile as well on other Unix-like systems.
+
+-------------------
+General information
+-------------------
+
+Highscore and config are now saved in ~/.formido. This folder is created the
+first time the game is run.
+
+--------------------
+GNU/Linux and others
+--------------------
+
+You must have SDL, SDL_image, and SDL_mixer installed.
+
+Run "make" in the formido directory.
+
+Then formido has to be run from this same directory with "./formido". There is 
+no installation at this time.
+
+
+--------
+Mac OS X
+--------
+
+If you just want to play the game, the precompiled binaries are enough and 
+already contain all the required libraries.
+
+To compile the game, you must have SDL, SDL_image and SDL_mixer installed as 
+frameworks under the directory /Library/Frameworks (if they are in 
+~/Library/Frameworks, you'll have to modify the Makefile)
+
+Rename Makefile into whatever you want, such as Makefile.old, and rename 
+Makefile.osx into Makefile.
+
+Then run "make" in the formido directory. This will compile the game and make a 
+bundle containing all the data, default config file, and required libraries, so 
+you can redistribute it on computers where the libs are not installed.
+
+The icon may not appear immediately. Copy the bundle somewhere else, and it 
+should be updated.

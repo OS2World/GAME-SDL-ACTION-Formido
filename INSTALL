@@ -1,0 +1,100 @@
+Formido v1.0 - Linux source release
+Copyright (C) 2002, 2003 Mika Halttunen
+
+	www.mhgames.cjb.net
+
+Contact by email: lsoft@mbnet.fi
+--------------------------------- -- -
+
+
+--------------------------------------
+0. THANKS TO
+--------------------------------- -- -
+
+ Initially, the Linux version wasn't very
+stable. I asked for help, and I surely
+got some =)
+I have listed the names of all persons
+who sent me patches regarding the problems.
+The names are in alphabetical order, and
+sorry if I left someone out.
+
+ Michael Alger
+ Matthias Bach
+ Jarmo Hekkanen
+ Tim O'Brien
+ Paul / dummy 
+ Julian Peterson
+ sibn
+ Adam Torgerson
+
+
+--------------------------------------
+1. LICENSE
+--------------------------------- -- -
+
+  This program is free software; you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation; either version 2 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  Read the file 'GPL_license.txt' for more detailed information.
+
+ Basically, you have the right to modify/use the game (and it's source
+code) in any way you like. This includes all kinds of distribution,
+modifications or even new games derived from the source code.
+However, if you distribute any modified/derived work, you must
+give your licensees (ie. players) the same rights as you have.
+This means releasing your work under the GNU GPL.
+
+ As a side note, I'd appreciate if you told me about any modified
+versions/new games based on Formido. You are not legally required
+to do that, but I'd like to try them out =) If you use any Formido's
+code, it would be nice if I was credited.
+
+
+--------------------------------------
+2. INFORMATION ABOUT THIS SOURCE RELEASE
+--------------------------------- -- -
+
+ This package contains the Formido's Linux version source files,
+which reside in /src and /include directories, and a Makefile
+which can be used to build the game right away. Keep reading..
+
+
+--------------------------------------
+3. HOW TO BUILD
+--------------------------------- -- -
+
+ Before you can build the game, you must have following
+libraries: (download them all from www.libsdl.org)
+
+SDL (v1.2.5)
+SDL_Mixer (v1.2.4)
+SDL_Image (v1.2.2)
+
+I have used the versions shown in parentheses, so your
+best bet is to use those versions. This is not strictly
+required, however. You can probably build the game with
+other versions too, at least if they're newer than those
+I used.
+
+ After you have built and installed the forementioned
+libraries, you can open your favourite console window,
+and switch to the formido directory. After that, type:
+$ make
+
+..which builds the game. Now you're ready to go.
+
+
+ That's all for now.
+ Have fun! (and possibly learn a thing or two =)
+
+					- Mika Halttunen
+
+
