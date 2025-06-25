@@ -1,5 +1,8 @@
 # GAME-SDL-ACTION-Formido
 Formido is one of those games, where you are loaded with some guns and you go shooting different things.
 
+## AUTHOR ##
+* Mika Halttunen
+
 ## LINK ##
-https://www.mhgames.org/oldies/formido/
+* https://www.mhgames.org/oldies/formido/
