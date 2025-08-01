@@ -1,4 +1,4 @@
-#Formido makefile for Linux/Unix
+#Formido makefile for Linux/Unix adapted to OS/2
 #Make sure you have SDL, SDL_mixer and SDL_image
 #installed!
 
@@ -19,7 +19,7 @@ DEFCONFIGDIR = .
 
 CC=g++
 FLAGS=`sdl-config --cflags` -Wall -I./include
-LINKFLAGS=-O2 -ffast-math -fomit-frame-pointer
+LINKFLAGS=-O2 -ffast-math -fomit-frame-pointer -Zomf
 LIBS=`sdl-config --libs` -lm -lSDL_mixer -lSDL_image
 CPPFILES=blend.cpp credits.cpp explo.cpp hof.cpp menu.cpp player.cpp \
 	bomb.cpp critter.cpp font.cpp init.cpp mymath.cpp powerup.cpp \
@@ -29,7 +29,7 @@ DEFINES=-DDATA_DIR=\"${DATDIR}\" -DHISCORE_DIR=\"${HISCOREDIR}\" -DCONFIG_DIR=\"
 
 SOURCES=$(addprefix src/, $(CPPFILES))
 OBJECTS=$(addprefix obj/, $(CPPFILES:.cpp=.o))
-PROGRAM=formido
+PROGRAM=formido.exe
 
 
 
@@ -44,7 +44,7 @@ obj/%.o: src/%.cpp
 
 
 clean:
-	rm  -r obj/*.o $(PROGRAM) Formido.app
+	rm  -r obj/*.o $(PROGRAM)
 
 
 
